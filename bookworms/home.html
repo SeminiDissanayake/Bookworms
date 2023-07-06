@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport"  content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheet for home page.css">
+<title>BOOKWORMS</title>
+	<style>
+  h2
+         {
+             color: #097969;
+              font-family: sans-serif;
+         }
+ h3{
+            color:#228B22;
+              font-family: sans-serif;  
+	 
+    }
+ body
+{
+    background-color: #E3DAE8;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url("images/th (33).jpg");
+	background-size: cover;
+	
+}
+		</style>
+</head>
+<body>
+<section class="header">
+		<nav><a href="home.html"><img src="images/worms.jpg" alt="" width="71" height="68" class="rounded-circle" align="left"/></a>
+			<div class="nav-links">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="login.php">SIGN IN</a></li>
+					<li><a href="myAccount.php">MY ACCOUNT</a></li>
+					<li><a href="books.php">BOOKS STORE</a></li>
+					
+				</ul>
+			
+			</div>
+		 
+		</nav>
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
+    <h1><center>
+	  <em style="font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, serif; font-size: larger;">~ BOOK WORMS ~ </em>
+	</center></h1>
+</section>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* next button to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* decrease text size on smaller screens */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+	p
+{
+	color: black;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 18px;
+	text-align: justify
+}
+	body,td,th {
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    font-size: x-large;
+}
+</style>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/th (23).jpg" alt="" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/th (13).jpg" alt="" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/th (14).jpg" alt="" style="width:100%">
+</div>
+	
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	<div class="sections">
+        <h1>Are u a book worm?  </h1>
+        <h2>Did you know that you could make serious money out of it?</h2>
+    <p> Your readed books that are stored in a dusty bookshelf could be worth a fortune, and you could even cash in on these used books. When it comes to books, one man’s trash really is another man’s treasure!</p>
+    <h3> All you have to do is <a href="login.php" class=".nav-links">register</a> with us.</h3>
+    <p> If you like to sell any of your books, you can post an advertisement. If you are looking for an specific book, simply enter the name and click search. If you are interested in buying books, you can buy them. </p>
+    </div>
+	
+	<button class="open-button" onclick="openForm()"><b>Send us a message</b><img src="images/6907d3b634d702bf2cbb421addffcdf4.jpeg" alt="" width="25" height="25"></button>
+
+<div class="chat-popup" id="myForm">
+  <form action="Online chat help.php" class="form-container"><a href="Online chat help.php">
+    <h2>How can we help you?</h2></a>
+
+    <label for="msg"><b>Chat with us</b></label>
+    <textarea placeholder="Type your message..." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<section class="footer">
+	
+		
+  <div class="box">
+				<h1>Follow us</h1>
+	  <img src="images/facebooklogo.png.png" alt="" width="42" height="40" class="img-thumbnail"/>
+	  <img src="images/twitter.png.png" alt="" width="42" height="40" class="img-thumbnail"/>
+	   <img src="images/instagramlogo.png.png" alt="" width="50" height="44" class="img-thumbnail"/>
+	  <img src="images/th (10).jpg" alt="" width="60" height="40" class="img-thumbnail"/><br> 
+	    <p>Get to know more about us</p>
+
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
+
+
+	            <img src="images/worms.jpg" alt="" width="110" height="110"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; <p1><b>bookworms</b><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  @2022 Allrights reserved.</p1>
+				
+                </div>    
+				
+  
+  <div class="footer-bottom">
+			<hr>
+			&copy; Copyright 2022 
+  </div>
+	
+</section>
+	
+	
+
+        
+</body>
+</html>

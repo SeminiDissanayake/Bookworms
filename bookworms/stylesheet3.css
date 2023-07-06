@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header
+{
+	background: radial-gradient();
+	height: 120px;
+}
+.container
+{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px
+}
+.navbar-style
+{
+	box-shadow: 0 5px 10px;
+	background:#EBE297;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+nav
+{
+	text-align: right;
+	flex:1;
+	color: lawngreen
+}
+nav ul
+{
+	display: inline-block;
+	list-style-type:none
+}
+nav ul li
+{
+	text-align: right;
+	display: inline-block
+}
+a
+{
+	text-decoration: none;
+	color: white;
+}
+	div.image
+{
+  margin: 2px;
+  height: auto;
+  width: auto;
+  float: left;
+  text-align: center;
+}	
+div.image img
+{
+  display: inline;
+  margin: 3px;
+
+}
+div.desc
+{
+  text-align: center;
+  font-weight: normal;
+  width: auto;
+ 	font-family:Arial, Helvetica, sans-serif;
+	color:#333;
+	font-size:16px;
+}
+p
+{
+	color: black;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 17px;
+	
+}
+body
+{
+	background-color:lightgray;
+}
+.row
+{
+	display: flex;
+	align-items: center
+}
+td
+{
+	text-align: center
+}
+.col-2
+{
+	flex-basis: 50%;
+	min-width: 300px
+}
+.col-2 h1
+{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0
+}
+.btn
+{
+	display: inline-block;
+	background:#C4EE7D;
+	color: brown;
+	border-radius: 100px
+}
+.table img{
+	transform: rotate(-35deg)
+}
+
+.table img:hover{
+	transform: rotate(-35deg)
+}
+.footer {
+   position:relative;
+   width:100%;
+   height:60px; 
+}
+.footer .Container
+{
+	border-radius: 5px;
+	background-color:darkgray;
+	display: flex;
+	flex-wrap: wrap;
+	gap:20px;
+}
+.footer .Container .box
+{
+	flex: 2px;
+}
+.footer .Container .box a
+{
+	color:navy;
+	display: block;
+	text-align: left;
+}
+.footer .Container .box a:hover
+{
+	color:wheat;
+	text-align: left;
+}
+.footer .footer-bottom{
+	text-align: center;
+	position: relative;
+	width:100%;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+.footer .Container .box .copyright
+{
+	text-align: center;
+}
+
+
+@media (max-width:991px)
+{
+	html{
+		font-size: 55%;
+	}
+	header{
+		padding: 2px;
+	}
+}
+
+@media (max-width:400px)
+{
+	html{
+	   font-size: 50%;
+     }
+}
+@media only screen and (max-width:700px)
+{
+	nav ul{
+	    position: absolute;
+		right: 0;
+		width: 100%;
+		z-index: 2;
+		top: 75px;
+     }
+	nav ul li{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.menu-icon{
+		display: block;
+	}
+	.menuList{
+		overflow: hidden;
+		transition: 0.5s; 
+	}
+	table{
+	    width: 100%;
+	   flex-basis: 100%;
+    }
+	td{
+		width: 100%;
+		
+	}
+
+}
